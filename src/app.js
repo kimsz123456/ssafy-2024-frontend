@@ -158,7 +158,8 @@ async function getAssistantResponse(userMessage) {
     payload = { messages: messagesForAPI };
     url = `${BASE_URL}/chat`;
   }
-
+  
+  console.log(payload)
   const response = await fetch(url, {
     method: "POST",
     headers: {
